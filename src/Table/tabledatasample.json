@@ -1,0 +1,112 @@
+{
+    "Table": {
+        "Table.Body": {
+            "Table.Row": [
+                {
+                    "Table.Cell": [
+                        "Alpha Team",
+                        "Project 1",
+                        {
+                            "#text": "2",
+                            "-textAlign": "right"
+                        },
+                        {
+                            "-textAlign": "center",
+                            "Icon": {
+                                "-color": "green",
+                                "-name": "checkmark",
+                                "-size": "large"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Table.Cell": [
+                        {
+                            "#text": "Beta Team",
+                            "-rowSpan": "3"
+                        },
+                        "Project 1",
+                        {
+                            "#text": "52",
+                            "-textAlign": "right"
+                        },
+                        {
+                            "-textAlign": "center",
+                            "Icon": {
+                                "-color": "green",
+                                "-name": "checkmark",
+                                "-size": "large"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Table.Cell": [
+                        "Project 2",
+                        {
+                            "#text": "12",
+                            "-textAlign": "right"
+                        },
+                        {
+                            "-textAlign": "center",
+                            "Icon": {
+                                "-color": "green",
+                                "-name": "checkmark",
+                                "-size": "large"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Table.Cell": [
+                        "Project 3",
+                        {
+                            "#text": "21",
+                            "-textAlign": "right"
+                        },
+                        {
+                            "-textAlign": "center",
+                            "Icon": {
+                                "-color": "green",
+                                "-name": "checkmark",
+                                "-size": "large"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "Table.Header": {
+            "Table.Row": [
+                {
+                    "Table.HeaderCell": [
+                        {
+                            "#text": "Name",
+                            "-rowSpan": "2"
+                        },
+                        {
+                            "#text": "Type",
+                            "-rowSpan": "2"
+                        },
+                        {
+                            "#text": "Files",
+                            "-rowSpan": "2"
+                        },
+                        {
+                            "#text": "Languages",
+                            "-colSpan": "3"
+                        }
+                    ]
+                },
+                {
+                    "Table.HeaderCell": [
+                        "Ruby",
+                        "JavaScript",
+                        "Python"
+                    ]
+                }
+            ]
+        }
+    }
+}
