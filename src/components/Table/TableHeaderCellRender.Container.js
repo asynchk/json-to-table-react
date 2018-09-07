@@ -23,9 +23,9 @@ class RenderTableHeaderCell extends React.Component {
           const dataType = typeOfObject(d);
           if (dataType === 'string') {
             return (
-              <TableHeaderCell key={`Table.HeaderCell-${id}-${index}`}>
+              <Table.HeaderCell key={`Table.HeaderCell-${id}-${index}`}>
                 {d}
-              </TableHeaderCell>
+              </Table.HeaderCell>
             );
           }
           if (dataType === 'object') {
@@ -44,9 +44,9 @@ class RenderTableHeaderCell extends React.Component {
             // console.log('TableHeaderCellProps', TableCellProps)
             // TODO: render a children
             return (
-              <TableHeaderCell {...TableCellProps} key={`Table.HeaderCell-${id}-${index}`}>
+              <Table.HeaderCell {...TableCellProps} key={`Table.HeaderCell-${id}-${index}`}>
                 {CellText}
-              </TableHeaderCell>
+              </Table.HeaderCell>
             );
           }
           return <div key="null" />;

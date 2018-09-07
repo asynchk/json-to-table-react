@@ -11,11 +11,11 @@ class TableContainer extends React.Component {
     const { data, id } = this.props;
     console.log('TableContainer', data);
     const dataType = typeOfObject(data);
-    if (dataType === 'object') {
+    if (dataType && dataType === 'object' && data!== null) {
       return Object.keys(data).map((key, index) => {
         if (key === 'Table') {
           // console.log('TableContainerNew key is Table')
-          return <TableRenderContainer key={`TableRenderContainer-${id}-${key}`} data={tableData[key]} id={id}/>;
+          return <TableRenderContainer key={`TableRenderContainer-${id}-${key}`} data={data[key]} id={id}/>;
         }
       });
     }

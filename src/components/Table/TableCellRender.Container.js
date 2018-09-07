@@ -22,12 +22,12 @@ class TableCellRenderContainer extends React.Component {
           // console.log('RenderTableCell single data', d)
           if (subdataType === 'string') {
             return (
-              <TableCell
+              <Table.Cell
                 key={`TableCellRenderContainer-${id}-${index}`}
                 text={d}
               >
                 {d}
-              </TableCell>
+              </Table.Cell>
             );
           }
           if (subdataType === 'object') {

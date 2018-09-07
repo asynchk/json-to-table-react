@@ -15,11 +15,11 @@ class TableRowRenderContainer extends React.Component {
     const dataType = typeOfObject(data);
     if (dataType === 'object') {
       return (
-        <TableRow>
+        <Table.Row>
           {
                         renderTableCellTableHeaderCellFromTableRow(data, id)
                     }
-        </TableRow>
+        </Table.Row>
       );
     }
     if (dataType === 'array') {
@@ -29,11 +29,11 @@ class TableRowRenderContainer extends React.Component {
         if (typeOfObject(d) === 'object') {
           // console.log("RenderTableRow dataType == 'array', then each item is object", d)
           return (
-            <TableRow
+            <Table.Row
               key={`TableRowRenderContainer-${id}-${index}`}
             >
               {renderTableCellTableHeaderCellFromTableRow(d, id)}
-            </TableRow>
+            </Table.Row>
           );
         }
         return <div key="null" />;

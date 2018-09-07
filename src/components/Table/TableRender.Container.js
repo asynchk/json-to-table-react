@@ -7,6 +7,7 @@ import React from 'react';
 // import { TableContainerProps, Props } from './Table.typings';
 
 import { typeOfObject } from './util';
+import { Table } from 'semantic-ui-react';
 
 import TableBodyRenderContainer from './TableBodyRender.Container';
 import TableHeaderRenderContainer from './TableHeaderRender.Container';
@@ -22,7 +23,7 @@ class TableRenderContainer extends React.Component {
     // TODO: array of table
     if (dataType === 'object') {
       return (
-        <StyledTable>
+        <Table>
           {
                         Object.keys(data).map((key) => {
                           if (key === 'Table.Body') {
@@ -35,7 +36,7 @@ class TableRenderContainer extends React.Component {
                           }
                         })
                     }
-        </StyledTable>
+        </Table>
       );
     }
     return <div />;

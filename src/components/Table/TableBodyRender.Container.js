@@ -1,4 +1,6 @@
 import React from 'react';
+
+// import * as tableData from './tabledatasample.json';
 import {
   Table,
   // Icon
@@ -9,23 +11,24 @@ import {
 import { typeOfObject } from './util';
 
 import renderTableRowFromTableHeaderBody from './TableRowRender.Util';
-import { TableHeader } from './StyledTable.Component';
+import { TableBody } from './StyledTable.Component';
 
-class TableHeaderRenderContainer extends React.Component {
+
+class TableBodyRenderContainer extends React.Component {
   render() {
     const { data, id } = this.props;
     const dataType = typeOfObject(data);
     if (dataType === 'object') {
       return (
-        <TableHeader>
+        <Table.Body>
           {
-                        renderTableRowFromTableHeaderBody(data, id, false)
+                        renderTableRowFromTableHeaderBody(data, id, true)
                     }
-        </TableHeader>
+        </Table.Body>
       );
     }
     return <div />;
   }
 }
 
-export default TableHeaderRenderContainer;
+export default TableBodyRenderContainer;
